@@ -106,7 +106,53 @@
                 border-radius:20px;
                 margin-left:130px;
             }
-
+        
+        /* ct1 and ct2 design*/
+            .CURRICULUM{
+                width:60%;
+            }
+            .MSE{
+                width:30%;
+                float:right;
+                border: 1px solid #ddd;
+                background-color: #1E201E; 
+                margin-right:1px;
+            }
+                #ct1{
+            width:160px;
+            margin-right:15px;
+            position:relative;
+        }
+        #CT2{
+            width:160px;
+            height:250px;
+            background-color:red;
+            position:absolute;
+            top:45px;
+            left:0px;
+            display:none;
+        }
+        #ct1:hover #CT2{
+            display:block;
+        }
+        ul{
+            list-style:none;
+            margin:0px;
+            padding:0px;
+        }
+        #branch{
+            width:160px;
+            height:35.71px;
+            box-sizing:border-box;
+            background-color:white;
+            border-width:1px;
+            border-style:solid;
+            border-color:black;
+            padding-top:6px;
+        }
+        #branch:hover {
+            background-color: #0057b7; /* Darker blue on hover */
+        }
         /* Responsive styling */
         @media (max-width: 768px) {
             header h1, header h2 {
@@ -140,6 +186,39 @@
     <marquee behavior="alternate"><h2><b id="alert">Click On "Open The Document Directly"</b></h2></marquee>
 </div>
     </header>
+    <div id="content">
+            <fieldset class="MSE">
+        <legend>
+            MSE
+        </legend>
+
+        <a href="#"><button id="ct1">CT1 &nbsp;<i class="fas fa-caret-down"></i>
+            <div id="CT2">
+                <ul>
+                    <li id="branch"><a href="#">CSE</a></li>
+                    <li id="branch"><a href="#">IT</a></li>
+                    <li id="branch"><a href="#">IE</a></li>
+                    <li id="branch"><a href="#">ME</a></li>
+                    <li id="branch"><a href="#">EXTC</a></li>
+                    <li id="branch"><a href="#">EE</a></li>
+                    <li id="branch"><a href="https://drive.google.com/file/d/10V4-yKCUI4SAgoSybljAZX_Is1VvWsL9/view?usp=drive_link">Civil</a></li>
+                </ul>
+            </div>
+        </button></a>
+        <a href="#"><button id="ct1">CT2 &nbsp;<i class="fas fa-caret-down"></i>
+            <div id="CT2">
+                <ul>
+                    <li id="branch"><a href="#">CSE</a></li>
+                    <li id="branch"><a href="#">IT</a></li>
+                    <li id="branch"><a href="#">IE</a></li>
+                    <li id="branch"><a href="#">ME</a></li>
+                    <li id="branch"><a href="#">EXTC</a></li>
+                    <li id="branch"><a href="#">EE</a></li>
+                    <li id="branch"><a href="#">Civil</a></li>
+                </ul> 
+            </div>
+        </button></a>
+    </fieldset>
 
     <fieldset>
         <legend>CURRICULUM</legend>
@@ -182,6 +261,7 @@ COMING SOON....
         <legend>Summer Term 22</legend>
          <a href="https://drive.google.com/file/d/1SqjsfOUShUEYJsaPF4YJLdF6WJsl667H/view?usp=drive_link"><button>M1</button></a>
     </fieldset>
+</div>
 </body>
 </html>
 
